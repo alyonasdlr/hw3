@@ -1,3 +1,17 @@
 <h1> <%= @place.name %></h>
 
-<p> <a href = "/places"> Go back to all travels </p>
+<h3>Posts</h3>
+
+
+<ul>
+  <% for post in @place.posts %>
+    <li><%= "#{post.title}, #{post.description}" %></li>
+  <% end %>
+</ul>
+
+<p>
+  <a href="/posts/new?place_id=<%= @place.id %>">New Post</a>
+</p>
+
+<p><a href="/places">Back to all Places</a></p>
+

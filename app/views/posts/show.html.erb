@@ -1,10 +1,10 @@
 
 
-<h1><%= @contact.last_name %>, <%= @contact.first_name %></h1>
+<h1><%= @post.place.name %> </h1>
 
-<ul>
-  <li><%= @contact.email %></li>
-  <li><%= @contact.phone_number %></li>
-</ul>
+#<ul>
+#  <li><%= @post.title %></li>
+#  <li><%= @post.description %></li>
+#</ul>
 
-<p><a href="/companies/<%= @contact.company.id %>">Back to <%= @contact.company.name %></a></p>
+<p><a href="/places/<%= @post.place.id %>">Back to <%= @post.place.name %></a></p>
